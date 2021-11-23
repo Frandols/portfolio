@@ -19,16 +19,16 @@ export default function ContactForm() {
     const handleSubmit = async (
         values, 
         { resetForm }) => {
-        const result = await emailjs.send(
+        const { status } = await emailjs.send(
             REACT_APP_SERVICE_ID, 
             REACT_APP_TEMPLATE_ID, 
             values, 
             REACT_APP_USER_ID
         )
 
-        setFormStatus(result)
+        setFormStatus(status)
 
-        if(result !== 200) return null
+        if(status !== 200) return null
 
         resetForm()
     }
