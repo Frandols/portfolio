@@ -25,7 +25,7 @@ export default function Nav({ menuOpen, setMenuOpen }) {
                             className="nav-link"
                             to="/"
                             onClick={() => setMenuOpen(false)}>
-                            Inicio
+                            Home
                         </Link>
                     </li>
                     <li
@@ -34,7 +34,7 @@ export default function Nav({ menuOpen, setMenuOpen }) {
                             className="nav-link"
                             to="/portfolio"
                             onClick={() => setMenuOpen(false)}>
-                            Portafolio
+                            Portfolio
                         </Link>
                     </li>
                     <li
@@ -43,7 +43,7 @@ export default function Nav({ menuOpen, setMenuOpen }) {
                             className="nav-link"
                             to="/contact"
                             onClick={() => setMenuOpen(false)}>
-                            Contacto
+                            Contact
                         </Link>
                     </li>
                 </ul>
