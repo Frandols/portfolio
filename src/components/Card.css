@@ -1,0 +1,27 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgb(0, 0, 0, .15);
+  }
+  .card-img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+  }
+  .card-text {
+    text-align: center;
+  }
+  .card-title {
+    font-size: 2rem;
+    font-weight: 500;
+    margin: 5px 0;
+  }
+  .card-subtitle {
+    font-weight: 400;
+    margin: 1rem 0;
+  }

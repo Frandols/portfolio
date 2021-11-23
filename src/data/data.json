@@ -1,0 +1,197 @@
+{
+    "home": {
+        "card": {
+            "image":{
+                "source": "/assets/img/profile.jpg",
+                "alt": "Francisco De Los Santos"
+            },
+            "title": "Francisco De Los Santos",
+            "subtitle": "Junior MERN Full Stack Developer"
+        },
+        "board": {
+            "title": "Technologies",
+            "data": [
+                {
+                    "id": 0,
+                    "label": "HTML"
+                },
+                {
+                    "id": 1,
+                    "label": "CSS"
+                },
+                {
+                    "id": 2,
+                    "label": "JavaScript"
+                },
+                {
+                    "id": 3,
+                    "label": "TypeScript"
+                },
+                {
+                    "id": 4,
+                    "label": "NodeJs"
+                },
+                {
+                    "id": 5,
+                    "label": "ReactJs"
+                },
+                {
+                    "id": 6,
+                    "label": "NextJs"
+                },
+                {
+                    "id": 7,
+                    "label": "ExpressJs"
+                },
+                {
+                    "id": 8,
+                    "label": "MySQL"
+                },
+                {
+                    "id": 9,
+                    "label": "MongoDB"
+                }
+            ]
+        }
+    },
+    "portfolio": {
+        "items": {
+            "name": "portfolio",
+            "title": "Portfolio",
+            "data": [
+                {
+                    "id": 0,
+                    "image": {
+                        "source": "/assets/img/portfolio/authposts.png",
+                        "alt": "Auth Posts"
+                    },
+                    "legend": "Auth and Posts Web Application"
+                },
+                {
+                    "id": 1,
+                    "image": {
+                        "source": "/assets/img/portfolio/compound-interest-calculator.png",
+                        "alt": "Compound Interest Calculator"
+                    },
+                    "legend": "Compound Interest Calculator"
+                },
+                {
+                    "id": 2,
+                    "image": {
+                        "source": "/assets/img/portfolio/image-seeker.png",
+                        "alt": "Image Seeker"
+                    },
+                    "legend": "Image Seeker"
+                },
+                {
+                    "id": 3,
+                    "image": {
+                        "source": "/assets/img/portfolio/shopping-cart.png",
+                        "alt": "Shopping Cart"
+                    },
+                    "legend": "Shopping Cart"
+                },
+                {
+                    "id": 4,
+                    "image": {
+                        "source": "/assets/img/portfolio/rpgcorrientes.png",
+                        "alt": "RPG Corrientes"
+                    },
+                    "legend": "RPG Corrientes"
+                }
+            ]
+        },
+        "proyects": [
+            {
+                "title": "Auth and Posts",
+                "images": [
+                    {
+                        "source": "/assets/img/portfolio/authposts.png",
+                        "alt": "Auth Posts"
+                    },
+                    {
+                        "source": "/assets/img/portfolio/mobile-view/authposts.png",
+                        "alt": "Auth Posts Mobile"
+                    }
+                ],
+                "description": "This web application lets you create an account and making posts with a title and a body, it works with an API that I developed with TypeScript and Express.",
+                "links": {
+                    "source": "https://github.com/Frandols/authposts",
+                    "production": "https://authposts.vercel.app"
+                }
+            },
+            {
+                "title": "Compound Interest Calculator",
+                "images": [
+                    {
+                        "source": "/assets/img/portfolio/compound-interest-calculator.png",
+                        "alt": "Compound Interest Calculator"
+                    },
+                    {
+                        "source": "/assets/img/portfolio/mobile-view/compound-interest-calculator.png",
+                        "alt": "Compound Interest Calculator Mobile"
+                    }
+                ],
+                "description": "This proyect was made using ReactJs with styled components and formik with yup. As its name says you can calculate compound interests.",
+                "links": {
+                    "source": "https://github.com/Frandols/compound-interest-calculator",
+                    "production": "https://compound-interest-five.vercel.app/"
+                }
+            },
+            {
+                "title": "Image Seeker",
+                "images": [
+                    {
+                        "source": "/assets/img/portfolio/image-seeker.png",
+                        "alt": "Image Seeker"
+                    },
+                    {
+                        "source": "/assets/img/portfolio/mobile-view/image-seeker.png",
+                        "alt": "Image Seeker Mobile"
+                    }
+                ],
+                "description": "This project was made using ReactJs with formik. It allows you to write a random topic in the headers input, and when you press enter its going to display some images about that topic. The images come from an API called unsplash.",
+                "links": {
+                    "source": "https://github.com/Frandols/image-seeker",
+                    "production": "https://image-seeker.vercel.app/"
+                }
+            },
+            {
+                "title": "Shopping Cart",
+                "images": [
+                    {
+                        "source": "/assets/img/portfolio/shopping-cart.png",
+                        "alt": "Shopping Cart"
+                    },
+                    {
+                        "source": "/assets/img/portfolio/mobile-view/shopping-cart.png",
+                        "alt": "Shopping Cart Mobile"
+                    }
+                ],
+                "description": "This project was made using ReactJs with class-based components and inline-styles. Its a simulation of an e-commerce shopping cart, it allows you to add the products that you see in the cart as much as you want.",
+                "links": {
+                    "source": "https://github.com/Frandols/shopping-cart",
+                    "production": "https://shopping-eta.vercel.app/"
+                }
+            },
+            {
+                "title": "RPG Corrientes",
+                "images": [
+                    {
+                        "source": "/assets/img/portfolio/rpgcorrientes.png",
+                        "alt": "RPG Corrientes"
+                    },
+                    {
+                        "source": "/assets/img/portfolio/mobile-view/rpgcorrientes.png",
+                        "alt": "RPG Corrientes Mobile"
+                    }
+                ],
+                "description": "This is a website that I made for a kinesiology center in my city. It was made using NextJs.",
+                "links": {
+                    "source": "https://github.com/Frandols/rpgcorrientes",
+                    "production": "https://rpgcorrientes.com/"
+                }
+            }
+        ]
+    }
+}

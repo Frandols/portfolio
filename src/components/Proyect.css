@@ -1,0 +1,58 @@
+.proyect {
+    width: 100%;
+    position: relative;
+}
+.proyect-img, .proyect-controls {
+    width: 100%;
+    height: 442.8px;
+}
+.proyect-img {
+    object-fit: cover;
+    border-radius: 5px;
+}
+.proyect-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0 15px;
+}
+.proyect-control {
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: #000;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: background-color .2s ease;
+}
+.proyect-control:hover {
+    background-color: rgba(0, 0, 0, .25);
+}
+.proyect-description {
+    margin: 15px 10px;
+}
+.proyect-button {
+    width: 150px;
+    height: 3rem;
+    margin: 5px 0 5px 10px;
+    background-color: #65fcad;
+    font-size: 1rem;
+    font-weight: 400;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color .1s ease;
+}
+.proyect-link {
+    margin: 0 5px;
+    color: #000;
+    text-decoration: none;
+}

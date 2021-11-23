@@ -1,0 +1,30 @@
+.site-nav {
+    overflow: hidden;
+    transition: height .4s ease;
+}
+.nav-list {
+    display: flex;
+    padding: 10px 0;
+}
+.nav-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 3rem;
+    list-style: none;
+}
+.nav-link {
+    color: #000;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+@media (max-width: 768px) {
+    .site-nav {
+        height: 0;
+    }
+    .nav-list {
+        flex-direction: column;
+    }
+}
