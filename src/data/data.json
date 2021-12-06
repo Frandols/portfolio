@@ -62,29 +62,21 @@
                 {
                     "id": 0,
                     "image": {
+                        "source":"/assets/img/portfolio/chat-app.png",
+                        "alt": "Chat App"
+                    },
+                    "legend": "Chat App"
+                },
+                {
+                    "id": 1,
+                    "image": {
                         "source": "/assets/img/portfolio/authposts.png",
                         "alt": "Auth Posts"
                     },
                     "legend": "Auth and Posts Web Application"
                 },
                 {
-                    "id": 1,
-                    "image": {
-                        "source": "/assets/img/portfolio/compound-interest-calculator.png",
-                        "alt": "Compound Interest Calculator"
-                    },
-                    "legend": "Compound Interest Calculator"
-                },
-                {
                     "id": 2,
-                    "image": {
-                        "source": "/assets/img/portfolio/image-seeker.png",
-                        "alt": "Image Seeker"
-                    },
-                    "legend": "Image Seeker"
-                },
-                {
-                    "id": 3,
                     "image": {
                         "source": "/assets/img/portfolio/shopping-cart.png",
                         "alt": "Shopping Cart"
@@ -92,7 +84,23 @@
                     "legend": "Shopping Cart"
                 },
                 {
+                    "id": 3,
+                    "image": {
+                        "source": "/assets/img/portfolio/image-seeker.png",
+                        "alt": "Image Seeker"
+                    },
+                    "legend": "Image Seeker"
+                },
+                {
                     "id": 4,
+                    "image": {
+                        "source": "/assets/img/portfolio/compound-interest-calculator.png",
+                        "alt": "Compound Interest Calculator"
+                    },
+                    "legend": "Compound Interest Calculator"
+                },
+                {
+                    "id": 5,
                     "image": {
                         "source": "/assets/img/portfolio/rpgcorrientes.png",
                         "alt": "RPG Corrientes"
@@ -102,6 +110,24 @@
             ]
         },
         "proyects": [
+            {
+                "title": "Chat App",
+                "images": [
+                    {
+                        "source": "/assets/img/portfolio/chat-app.png",
+                        "alt": "Chat App"
+                    },
+                    {
+                        "source": "/assets/img/portfolio/mobile-view/chat-app.png",
+                        "alt": "Chat App Mobile"
+                    }
+                ],
+                "description": "This is a realtime chat application made using express and socket.io with typescript for the server-side and react with typescript for the client-side, you can create rooms or join one of them and start chatting with people connected.",
+                "links": {
+                    "source": "https://github.com/Frandols/chat-app",
+                    "production": "https://chat-app-fndls.herokuapp.com"
+                }
+            },
             {
                 "title": "Auth and Posts",
                 "images": [
@@ -121,21 +147,21 @@
                 }
             },
             {
-                "title": "Compound Interest Calculator",
+                "title": "Shopping Cart",
                 "images": [
                     {
-                        "source": "/assets/img/portfolio/compound-interest-calculator.png",
-                        "alt": "Compound Interest Calculator"
+                        "source": "/assets/img/portfolio/shopping-cart.png",
+                        "alt": "Shopping Cart"
                     },
                     {
-                        "source": "/assets/img/portfolio/mobile-view/compound-interest-calculator.png",
-                        "alt": "Compound Interest Calculator Mobile"
+                        "source": "/assets/img/portfolio/mobile-view/shopping-cart.png",
+                        "alt": "Shopping Cart Mobile"
                     }
                 ],
-                "description": "This proyect was made using ReactJs with styled components and formik with yup. As its name says you can calculate compound interests.",
+                "description": "This project was made using ReactJs with class-based components and inline-styles. Its a simulation of an e-commerce shopping cart, it allows you to add the products that you see in the cart as much as you want.",
                 "links": {
-                    "source": "https://github.com/Frandols/compound-interest-calculator",
-                    "production": "https://compound-interest-five.vercel.app/"
+                    "source": "https://github.com/Frandols/shopping-cart",
+                    "production": "https://shopping-eta.vercel.app/"
                 }
             },
             {
@@ -157,21 +183,21 @@
                 }
             },
             {
-                "title": "Shopping Cart",
+                "title": "Compound Interest Calculator",
                 "images": [
                     {
-                        "source": "/assets/img/portfolio/shopping-cart.png",
-                        "alt": "Shopping Cart"
+                        "source": "/assets/img/portfolio/compound-interest-calculator.png",
+                        "alt": "Compound Interest Calculator"
                     },
                     {
-                        "source": "/assets/img/portfolio/mobile-view/shopping-cart.png",
-                        "alt": "Shopping Cart Mobile"
+                        "source": "/assets/img/portfolio/mobile-view/compound-interest-calculator.png",
+                        "alt": "Compound Interest Calculator Mobile"
                     }
                 ],
-                "description": "This project was made using ReactJs with class-based components and inline-styles. Its a simulation of an e-commerce shopping cart, it allows you to add the products that you see in the cart as much as you want.",
+                "description": "This proyect was made using ReactJs with styled components and formik with yup. As its name says you can calculate compound interests.",
                 "links": {
-                    "source": "https://github.com/Frandols/shopping-cart",
-                    "production": "https://shopping-eta.vercel.app/"
+                    "source": "https://github.com/Frandols/compound-interest-calculator",
+                    "production": "https://compound-interest-five.vercel.app/"
                 }
             },
             {
