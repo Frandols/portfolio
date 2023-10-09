@@ -46,11 +46,7 @@ const ListItem: FC<ListItemProps> = ({
 			}}
 		>
 			<Link href={link}>
-				<a
-					className={styles.link}
-					target='_blank'
-					rel='noreferrer'
-				>
+				<a className={styles.link}>
 					<Image
 						className={styles.image}
 						src={image.src}
