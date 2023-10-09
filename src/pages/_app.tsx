@@ -10,7 +10,7 @@ const App = ({ Component, pageProps }: AppProps) => (
 			<link
 				rel='icon'
 				type='image/svg+xml'
-				href='/logo.svg'
+				href='assets/logo.svg'
 			/>
 		</Head>
 		<Header />
