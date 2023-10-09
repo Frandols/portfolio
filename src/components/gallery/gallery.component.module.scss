@@ -1,0 +1,38 @@
+.gallery {
+	border-radius: 1rem;
+	border: 1.75px solid #e2e2e2;
+	padding: 1rem;
+	display: grid;
+	grid-template-rows: minmax(19rem, 1fr) 3rem;
+	gap: 1rem;
+
+	.selectedImage {
+		position: relative;
+		border-radius: 1rem;
+		overflow: hidden;
+		background: #f1f5f9;
+	}
+
+	.images {
+		display: grid;
+		grid-auto-flow: column;
+		grid-auto-columns: 3rem;
+		height: 3rem;
+		gap: 1rem;
+		overflow-x: scroll;
+
+		.image {
+			width: 3rem;
+			height: 3rem;
+			border-radius: 0.5rem;
+			cursor: pointer;
+			overflow: hidden;
+			position: relative;
+			border: 1px solid #e2e2e2;
+		}
+
+		.imageSelected {
+			border: 0.2rem solid var(--primary);
+		}
+	}
+}

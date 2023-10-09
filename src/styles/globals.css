@@ -1,0 +1,47 @@
+:root {
+	--primary: #6696a3;
+	--primary-light: #eefff8;
+	--secondary-light: #eef3ff;
+	--padding-horizontal: calc((100vw - 1024px) / 2);
+}
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+		Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+h1,
+h2,
+p {
+	color: #111111;
+}
+
+input,
+button {
+	border: none;
+	outline: none;
+}
+
+@media screen and (max-width: 1056px) {
+	:root {
+		--padding-horizontal: 1rem;
+	}
+}
+
+::-webkit-scrollbar {
+	display: none;
+}
+
+.main {
+	min-height: calc(100dvh - 11.375rem);
+	display: grid;
+	grid-template-rows: 1fr;
+}

@@ -1,0 +1,36 @@
+.button {
+	width: 100%;
+	font-size: 1rem;
+	padding: 1rem 0;
+	border-radius: 1rem;
+	font-weight: 600;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	transition: opacity 0.25s ease;
+
+	&:hover {
+		opacity: 0.75;
+	}
+}
+
+.button svg {
+	margin: 0 0.5rem;
+}
+
+.button-primary {
+	background-color: var(--primary);
+	color: #fff;
+}
+
+.button-secondary {
+	background-color: transparent;
+	color: var(--primary);
+	border: 2px solid var(--primary);
+}
+
+.buttonDisabled {
+	opacity: 0.5;
+	pointer-events: none;
+}

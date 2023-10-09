@@ -1,0 +1,29 @@
+.project {
+	padding: 1rem var(--padding-horizontal);
+	min-height: calc(100dvh - 246px);
+	display: grid;
+	grid-template-columns: minmax(25rem, 1fr) 25rem;
+	grid-template-rows: 1fr;
+	gap: 1rem;
+
+	.info {
+		display: flex;
+		flex-direction: column;
+		gap: 1rem;
+
+		.buttons {
+			display: flex;
+			flex-direction: column;
+			gap: 0.5rem;
+
+			.link {
+				display: flex;
+				align-items: center;
+			}
+		}
+	}
+
+	@media screen and (max-width: 53rem) {
+		grid-template-columns: 1fr;
+	}
+}

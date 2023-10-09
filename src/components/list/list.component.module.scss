@@ -1,0 +1,15 @@
+.list {
+	display: grid;
+	gap: 1rem;
+	place-content: center;
+}
+
+.list-primary {
+	grid-template-columns: repeat(auto-fit, 15.25rem);
+	grid-template-rows: repeat(auto-fit, 18.5rem);
+}
+
+.list-secondary {
+	grid-template-columns: 1fr;
+	grid-template-rows: repeat(auto-fit, 5rem);
+}

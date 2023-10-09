@@ -1,0 +1,92 @@
+.listItem {
+	list-style: none;
+	border-radius: 1rem;
+	border: 1.75px solid #e2e2e2;
+	background-color: white;
+
+	.link {
+		padding: 1rem;
+		display: grid;
+
+		&:hover {
+			.body .title,
+			.body .description {
+				color: var(--primary);
+			}
+		}
+
+		.image {
+			border-radius: 0.5rem;
+			object-fit: cover;
+		}
+
+		.body {
+			.title {
+				white-space: nowrap;
+				overflow: hidden;
+				text-overflow: ellipsis;
+				font-size: 1.125rem;
+			}
+
+			.description {
+				font-size: 1rem;
+				overflow: hidden;
+				color: rgba(0, 0, 0, 0.55);
+			}
+		}
+	}
+}
+
+.listItem-primary {
+	.link {
+		grid-template-rows: 8rem 8rem;
+		gap: 0.5rem;
+
+		.body {
+			display: grid;
+			grid-template-rows: 2rem 6rem;
+
+			.title {
+				white-space: nowrap;
+				overflow: hidden;
+				text-overflow: ellipsis;
+				font-size: 1.125rem;
+				line-height: 2rem;
+			}
+
+			.description {
+				display: -webkit-box;
+				-webkit-box-orient: vertical;
+				-webkit-line-clamp: 6;
+				line-height: 1rem;
+			}
+		}
+	}
+}
+
+.listItem-secondary {
+	.link {
+		grid-template-columns: 3rem 1fr;
+		gap: 1rem;
+
+		.body {
+			display: grid;
+			grid-template-rows: 1.5rem 1.5rem;
+
+			.title {
+				white-space: nowrap;
+				overflow: hidden;
+				text-overflow: ellipsis;
+				font-size: 1.125rem;
+				line-height: 1.5rem;
+			}
+
+			.description {
+				display: -webkit-box;
+				-webkit-box-orient: vertical;
+				-webkit-line-clamp: 1;
+				line-height: 1.5rem;
+			}
+		}
+	}
+}

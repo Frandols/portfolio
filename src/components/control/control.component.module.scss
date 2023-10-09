@@ -1,0 +1,37 @@
+.control {
+	display: grid;
+	grid-template-rows: 3rem 1.5rem;
+	position: relative;
+	align-items: center;
+
+	.label {
+		position: absolute;
+		text-transform: capitalize;
+		padding-bottom: 1.5rem;
+		left: 1rem;
+		font-weight: 600;
+		color: #a7a7a7;
+		transition: transform 0.25s ease, font-size 0.25s ease;
+		cursor: text;
+	}
+
+	.input {
+		border: 1.75px solid #e2e2e2;
+		border-radius: 0.75rem;
+		height: 100%;
+		padding: 0 1rem;
+	}
+
+	.input:focus + .label,
+	.input:not(:placeholder-shown) + .label {
+		transform: translateY(-1.25em);
+		font-size: 0.65rem;
+	}
+
+	.error {
+		font-size: 0.8rem;
+		font-weight: 600;
+		color: rgb(255, 100, 100);
+		line-height: 1.5rem;
+	}
+}
