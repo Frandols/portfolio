@@ -1,9 +1,13 @@
 import { FieldInputProps, useField } from 'formik'
 
-import { FC } from 'react'
+import { FC, InputHTMLAttributes } from 'react'
 import styles from './control.component.module.scss'
 
-const Control: FC<FieldInputProps<any>> = (props) => {
+interface ControlProps
+	extends Omit<InputHTMLAttributes<HTMLInputElement>, 'name'>,
+		Omit<FieldInputProps<any>, 'onChange' | 'onBlur' | 'value'> {}
+
+const Control: FC<ControlProps> = (props) => {
 	const [field, meta] = useField(props)
 
 	return (
