@@ -27,12 +27,18 @@ const HomePage: NextPage = () => {
 						className={styles.downloadCV}
 						title='Download CV'
 					>
-						CV
-						<HiArrowDownTray
-							size={16}
-							strokeWidth={1}
-							color='var(--primary)'
-						/>
+						<a
+							className={styles.link}
+							href='/assets/CV_FranciscoDeLosSantos.pdf'
+							download
+						>
+							CV
+							<HiArrowDownTray
+								size={16}
+								strokeWidth={1}
+								color='var(--primary)'
+							/>
+						</a>
 					</button>
 				</section>
 				<Section title='Feautured projects'>
