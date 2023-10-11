@@ -1,3 +1,5 @@
 export { default as certifications } from './certifications.data'
+export { default as education } from './education.data'
+export { default as experience } from './experience.data'
 export { default as projects } from './projects.data'
 export { default as social } from './social.data'

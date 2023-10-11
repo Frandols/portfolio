@@ -55,7 +55,6 @@ const ContactSection: FC = () => {
 				<Control name='message' />
 				<Button
 					type='submit'
-					variant='primary'
 					disabled={submitting}
 				>
 					Get in touch

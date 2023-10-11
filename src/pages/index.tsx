@@ -1,19 +1,10 @@
-import emailjs from '@emailjs/browser'
-import {
-	Button,
-	ContactSection,
-	Control,
-	Form,
-	List,
-	Section,
-} from 'components'
-import { certifications, projects } from 'data'
+import { ContactSection, List, Section } from 'components'
+import { certifications, education, experience, projects } from 'data'
 import type { NextPage } from 'next'
 import Image from 'next/image'
 import Link from 'next/link'
-import toast, { Toaster } from 'react-hot-toast'
+import { HiArrowDownTray } from 'react-icons/hi2'
 import { HomePageStyles as styles } from 'styles'
-import { object, string } from 'yup'
 
 const HomePage: NextPage = () => {
 	return (
@@ -32,6 +23,17 @@ const HomePage: NextPage = () => {
 						<h1 className={styles.title}>Francisco De Los Santos</h1>
 						<h2 className={styles.subtitle}>Web Developer</h2>
 					</div>
+					<button
+						className={styles.downloadCV}
+						title='Download CV'
+					>
+						CV
+						<HiArrowDownTray
+							size={16}
+							strokeWidth={1}
+							color='var(--primary)'
+						/>
+					</button>
 				</section>
 				<Section title='Feautured projects'>
 					<List
@@ -49,8 +51,30 @@ const HomePage: NextPage = () => {
 						<a className={styles.link}>See all</a>
 					</Link>
 				</Section>
+				<Section title='Experience'>
+					<List
+						items={experience.map((experience) => ({
+							title: experience.title,
+							description: experience.period,
+							link: experience.link,
+							image: experience.logo,
+						}))}
+						variant='secondary'
+					/>
+				</Section>
 			</main>
 			<aside className={styles.aside}>
+				<Section title='Education'>
+					<List
+						items={education.map((education) => ({
+							title: education.title,
+							description: education.period,
+							link: '/',
+							image: education.logo,
+						}))}
+						variant='secondary'
+					/>
+				</Section>
 				<Section title='Certifications'>
 					<List
 						items={certifications.map((certification) => ({

@@ -15,7 +15,7 @@
 	.main {
 		.presentation {
 			display: grid;
-			grid-template-columns: 3.5rem 1fr;
+			grid-template-columns: 3.5rem 1fr min-content;
 			grid-gap: 1rem;
 			align-items: center;
 			padding: 1rem;
@@ -35,6 +35,20 @@
 					font-size: 1rem;
 					font-weight: normal;
 					line-height: 1.5rem;
+				}
+			}
+
+			.downloadCV {
+				background-color: transparent;
+				cursor: pointer;
+				display: flex;
+				align-items: center;
+				gap: 0.25rem;
+				font-weight: bold;
+				color: var(--primary);
+
+				&:hover {
+					text-decoration: underline;
 				}
 			}
 		}
