@@ -51,9 +51,10 @@ const ListItem: FC<ListItemProps> = ({
 						className={styles.image}
 						src={image.src}
 						alt={image.alt}
-						width={variant === 'secondary' ? 48 : 224}
-						height={variant === 'secondary' ? 48 : 128}
+						width={variant === 'secondary' ? 64 : 224}
+						height={variant === 'secondary' ? 64 : 128}
 						unoptimized
+						objectFit='cover'
 					/>
 					<div className={styles.body}>
 						<h1
