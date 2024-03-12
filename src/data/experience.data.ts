@@ -6,7 +6,7 @@ const experience: Experience[] = [
 		period: 'November 2023 - Present (Currently working)',
 		link: '/',
 		logo: {
-			src: 'assets/experience/dashrd.avif',
+			src: 'assets/experience/dashrd.webp',
 			alt: 'DashRD logo',
 		},
 	},
