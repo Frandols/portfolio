@@ -67,7 +67,7 @@ const HomePage: NextPage = () => {
 						variant={'secondary'}
 					/>
 					<Link href='/projects'>
-						<a className={styles.link}>See all</a>
+						<a className={styles.link}>See all ({projects.length})</a>
 					</Link>
 				</Section>
 			</main>
