@@ -21,7 +21,9 @@ const HomePage: NextPage = () => {
 					/>
 					<div className={styles.body}>
 						<h1 className={styles.title}>Francisco De Los Santos</h1>
-						<h2 className={styles.subtitle}>Web Developer</h2>
+						<h2 className={styles.subtitle}>
+							1 year of experience. <b className={styles.bold}>Web developer</b>
+						</h2>
 					</div>
 					<button
 						className={styles.downloadCV}
@@ -41,6 +43,17 @@ const HomePage: NextPage = () => {
 						</a>
 					</button>
 				</section>
+				<Section title='Experience'>
+					<List
+						items={experience.map((experience) => ({
+							title: experience.title,
+							description: experience.period,
+							link: experience.link,
+							image: experience.logo,
+						}))}
+						variant='secondary'
+					/>
+				</Section>
 				<Section title='Feautured projects'>
 					<List
 						items={projects
@@ -56,17 +69,6 @@ const HomePage: NextPage = () => {
 					<Link href='/projects'>
 						<a className={styles.link}>See all</a>
 					</Link>
-				</Section>
-				<Section title='Experience'>
-					<List
-						items={experience.map((experience) => ({
-							title: experience.title,
-							description: experience.period,
-							link: experience.link,
-							image: experience.logo,
-						}))}
-						variant='secondary'
-					/>
 				</Section>
 			</main>
 			<aside className={styles.aside}>
