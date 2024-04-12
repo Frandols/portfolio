@@ -2,12 +2,12 @@ import { Experience } from 'models'
 
 const experience: Experience[] = [
 	{
-		title: 'DashRD | Web developer',
-		period: 'November 2023 - Present (Currently working)',
+		title: 'El Dorado Research Group | Web developer',
+		period: 'November 2023 - April 2024',
 		link: '/',
 		logo: {
-			src: 'assets/experience/dashrd.webp',
-			alt: 'DashRD logo',
+			src: 'assets/experience/edrgr.avif',
+			alt: 'El Dorado Research Group Logo',
 		},
 	},
 	{
