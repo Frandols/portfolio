@@ -15,28 +15,28 @@ const ProjectPage: NextPage = () => {
 				<h1 className={styles.title}>{project.title}</h1>
 				<p className={styles.description}>{project.description}</p>
 				<div className={styles.buttons}>
-					<Button variant='primary'>
-						<Link href={project.links.demo}>
-							<a
-								className={styles.link}
-								target='_blank'
-								rel='noreferrer'
-							>
+					<Link href={project.links.demo}>
+						<a
+							className={styles.link}
+							target='_blank'
+							rel='noreferrer'
+						>
+							<Button variant='primary'>
 								Demo <Play size={16} />
-							</a>
-						</Link>
-					</Button>
-					<Button variant='secondary'>
-						<Link href={project.links.source}>
-							<a
-								className={styles.link}
-								target='_blank'
-								rel='noreferrer'
-							>
+							</Button>
+						</a>
+					</Link>
+					<Link href={project.links.source}>
+						<a
+							className={styles.link}
+							target='_blank'
+							rel='noreferrer'
+						>
+							<Button variant='secondary'>
 								Source <Code size={16} />
-							</a>
-						</Link>
-					</Button>
+							</Button>
+						</a>
+					</Link>
 				</div>
 			</div>
 		</section>
