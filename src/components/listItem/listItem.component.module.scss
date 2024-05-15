@@ -35,6 +35,13 @@
 			}
 		}
 	}
+
+	.extra {
+		grid-column-start: 1;
+		grid-column-end: 3;
+		padding: 1rem;
+		padding-top: 0;
+	}
 }
 
 .listItem-primary {

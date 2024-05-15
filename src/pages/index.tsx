@@ -1,9 +1,11 @@
 import { ContactSection, List, Section } from 'components'
 import { certifications, education, experience, projects } from 'data'
+import { Experience } from 'models'
 import type { NextPage } from 'next'
 import Image from 'next/image'
 import Link from 'next/link'
-import { HiArrowDownTray } from 'react-icons/hi2'
+import { FC } from 'react'
+import { HiArrowDownTray, HiArrowRight, HiStar } from 'react-icons/hi2'
 import { HomePageStyles as styles } from 'styles'
 
 const HomePage: NextPage = () => {
@@ -22,7 +24,8 @@ const HomePage: NextPage = () => {
 					<div className={styles.body}>
 						<h1 className={styles.title}>Francisco De Los Santos</h1>
 						<h2 className={styles.subtitle}>
-							1 year of experience. <b className={styles.bold}>Web developer</b>
+							<b className={styles.bold}>Web developer.</b> 1 year of
+							experience.
 						</h2>
 					</div>
 					<button
@@ -50,9 +53,25 @@ const HomePage: NextPage = () => {
 							description: experience.period,
 							link: experience.link,
 							image: experience.logo,
+							children:
+								experience.positions.length > 0
+									? experience.positions.map((position) => {
+											return (
+												<Position
+													key={`${experience.title}-${position.title}`}
+													{...position}
+												/>
+											)
+									  })
+									: null,
 						}))}
 						variant='secondary'
 					/>
+					<Link href='/experience'>
+						<a className={styles.link}>
+							Read more about my experience! <HiArrowRight strokeWidth={2} />
+						</a>
+					</Link>
 				</Section>
 				<Section title='Feautured projects'>
 					<List
@@ -67,7 +86,9 @@ const HomePage: NextPage = () => {
 						variant={'secondary'}
 					/>
 					<Link href='/projects'>
-						<a className={styles.link}>See all ({projects.length})</a>
+						<a className={styles.link}>
+							See all ({projects.length}) <HiArrowRight strokeWidth={2} />
+						</a>
 					</Link>
 				</Section>
 			</main>
@@ -97,6 +118,48 @@ const HomePage: NextPage = () => {
 				<ContactSection />
 			</aside>
 		</section>
+	)
+}
+
+const Position: FC<Experience['positions'][number]> = ({
+	title,
+	started,
+	ended,
+	link,
+	rating,
+}) => {
+	return (
+		<div className={styles.position}>
+			<div className={styles.connector}>
+				<div className={styles.top}></div>
+				<div className={styles.bottom}></div>
+			</div>
+			<a
+				className={styles.body}
+				href={link}
+				target='_blank'
+				rel='noreferrer'
+			>
+				<h1
+					className={styles.title}
+					title={title}
+				>
+					{title}
+				</h1>
+				<p className={styles.description}>
+					{started} - {ended}
+				</p>
+			</a>
+			{rating === undefined ? null : (
+				<div className={styles.rating}>
+					<p className={styles.count}>{rating}</p>{' '}
+					<HiStar
+						size={20}
+						color='#debe1a'
+					/>
+				</div>
+			)}
+		</div>
 	)
 }
 

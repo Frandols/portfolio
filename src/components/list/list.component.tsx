@@ -5,7 +5,10 @@ import { ListItemProps } from '../listItem/listItem.component'
 import styles from './list.component.module.scss'
 
 interface ListProps extends Pick<ListItemProps, 'variant'> {
-	items: Pick<ListItemProps, 'image' | 'title' | 'description' | 'link'>[]
+	items: Pick<
+		ListItemProps,
+		'image' | 'title' | 'description' | 'link' | 'children'
+	>[]
 }
 
 const List: FC<ListProps> = ({ items, variant = 'primary' }) => {

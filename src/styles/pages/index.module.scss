@@ -38,7 +38,6 @@
 
 					.bold {
 						color: var(--primary);
-						text-decoration: underline;
 					}
 				}
 			}
@@ -56,11 +55,82 @@
 			}
 		}
 
+		.position {
+			display: grid;
+			grid-template-columns: 3rem 1fr 3rem;
+			align-items: center;
+			gap: 1rem;
+
+			.connector {
+				display: grid;
+				grid-template-columns: repeat(2, 1fr);
+				grid-template-rows: repeat(2, 1.5rem);
+
+				.top,
+				.bottom {
+					grid-column-start: 2;
+					border-left: 1.75px solid #d4d4d4;
+				}
+
+				.top {
+					border-bottom: 1.75px solid #d4d4d4;
+				}
+			}
+
+			.body {
+				&:hover {
+					.title,
+					.description {
+						color: var(--primary);
+					}
+				}
+
+				.title {
+					white-space: nowrap;
+					overflow: hidden;
+					text-overflow: ellipsis;
+					font-size: 1.125rem;
+				}
+
+				.description {
+					font-size: 1rem;
+					overflow: hidden;
+					color: rgba(0, 0, 0, 0.55);
+				}
+			}
+
+			.rating {
+				display: flex;
+				align-items: center;
+				gap: 0.25rem;
+
+				.count {
+					font-weight: bold;
+					font-size: 1rem;
+				}
+			}
+
+			&:nth-last-child(1) {
+				.connector {
+					.top {
+						border-bottom-left-radius: 0.5rem;
+					}
+
+					.bottom {
+						border: none;
+					}
+				}
+			}
+		}
+
 		.link {
 			font-weight: 600;
 			color: var(--primary);
 			line-height: 1.25rem;
 			font-size: 1rem;
+			display: flex;
+			align-items: center;
+			gap: 0.25rem;
 
 			&:hover {
 				text-decoration: underline;

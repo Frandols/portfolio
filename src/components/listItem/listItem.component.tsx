@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion'
 import Image from 'next/image'
 import Link from 'next/link'
-import type { FC } from 'react'
+import type { FC, PropsWithChildren, ReactNode } from 'react'
 import styles from './listItem.component.module.scss'
 
 const variants = {
@@ -26,6 +26,7 @@ export interface ListItemProps {
 	description: string
 	link: string
 	variant?: 'primary' | 'secondary'
+	children?: ReactNode
 }
 
 const ListItem: FC<ListItemProps> = ({
@@ -34,6 +35,7 @@ const ListItem: FC<ListItemProps> = ({
 	description,
 	link,
 	variant = 'primary',
+	children,
 }) => {
 	return (
 		<motion.li
@@ -46,7 +48,11 @@ const ListItem: FC<ListItemProps> = ({
 			}}
 		>
 			<Link href={link}>
-				<a className={styles.link}>
+				<a
+					className={styles.link}
+					target={link.includes('https://') ? '_blank' : '_self'}
+					rel='noreferrer'
+				>
 					<Image
 						className={styles.image}
 						src={image.src}
@@ -67,6 +73,9 @@ const ListItem: FC<ListItemProps> = ({
 					</div>
 				</a>
 			</Link>
+			{children === undefined ? null : (
+				<div className={styles.extra}>{children}</div>
+			)}
 		</motion.li>
 	)
 }

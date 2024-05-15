@@ -6,4 +6,11 @@ export default interface Experience {
 		src: string
 		alt: string
 	}
+	positions: {
+		title: string
+		started: string
+		ended: string
+		link: string
+		rating?: number
+	}[]
 }
