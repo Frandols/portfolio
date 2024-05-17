@@ -63,12 +63,12 @@ const ListItem: FC<ListItemProps> = ({
 						objectFit='cover'
 					/>
 					<div className={styles.body}>
-						<h1
+						<h3
 							className={styles.title}
 							title={title}
 						>
 							{title}
-						</h1>
+						</h3>
 						<p className={styles.description}>{description}</p>
 					</div>
 				</a>

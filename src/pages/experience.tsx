@@ -1,9 +1,18 @@
+import Head from 'next/head'
 import styles from 'styles/pages/experience.module.scss'
 
 const ExperiencePage = () => {
 	return (
 		<section className={styles.experiencePage}>
-			<h1>More about my experience as a developer...</h1>
+			<Head>
+				<title>Experience - Francisco De Los Santos | Web Developer</title>
+				<meta
+					name='description'
+					content='How I started working as a web developer and the progress I made.'
+					key='desc'
+				/>
+			</Head>
+			<h1>Experience</h1>
 			<div className={styles.item}>
 				<h2 className={styles.title}>
 					<u>How I started</u>

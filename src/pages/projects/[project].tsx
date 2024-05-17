@@ -1,6 +1,7 @@
 import { Button, Gallery } from 'components'
 import { useProject } from 'hooks'
 import { NextPage } from 'next'
+import Head from 'next/head'
 import Link from 'next/link'
 import { Code, Play } from 'react-feather'
 import { ProjectPageStyles as styles } from 'styles'
@@ -10,6 +11,14 @@ const ProjectPage: NextPage = () => {
 
 	return (
 		<section className={styles.project}>
+			<Head>
+				<title>{project.title} - Francisco De Los Santos | Web Developer</title>
+				<meta
+					name='description'
+					content={project.description}
+					key='desc'
+				/>
+			</Head>
 			<Gallery images={project.images} />
 			<div className={styles.info}>
 				<h1 className={styles.title}>{project.title}</h1>

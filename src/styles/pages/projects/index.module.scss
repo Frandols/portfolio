@@ -1,3 +1,6 @@
 .projectsPage {
 	padding: 1rem var(--padding-horizontal);
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
 }

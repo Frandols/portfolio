@@ -2,15 +2,29 @@ import { ContactSection, List, Section } from 'components'
 import { certifications, education, experience, projects } from 'data'
 import { Experience } from 'models'
 import type { NextPage } from 'next'
+import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
 import { FC } from 'react'
-import { HiArrowDownTray, HiArrowRight, HiStar } from 'react-icons/hi2'
+import {
+	HiArrowDownTray,
+	HiArrowRight,
+	HiArrowTopRightOnSquare,
+	HiStar,
+} from 'react-icons/hi2'
 import { HomePageStyles as styles } from 'styles'
 
 const HomePage: NextPage = () => {
 	return (
 		<section className={styles.homePage}>
+			<Head>
+				<title>Home - Francisco De Los Santos | Web Developer</title>
+				<meta
+					name='description'
+					content='1 year of experience as Web Developer.'
+					key='desc'
+				/>
+			</Head>
 			<main className={styles.main}>
 				<section className={styles.presentation}>
 					<Image
@@ -24,21 +38,18 @@ const HomePage: NextPage = () => {
 					<div className={styles.body}>
 						<h1 className={styles.title}>Francisco De Los Santos</h1>
 						<h2 className={styles.subtitle}>
-							<b className={styles.bold}>Web developer.</b> 1 year of
-							experience.
+							1 year of experience as{' '}
+							<b className={styles.bold}>Web Developer.</b>
 						</h2>
 					</div>
-					<button
-						className={styles.downloadCV}
-						title='Download CV'
-					>
+					<button className={styles.downloadCV}>
 						<a
 							className={styles.link}
 							href='/assets/CV_FranciscoDeLosSantos.pdf'
-							download
+							target='_blank'
 						>
 							CV
-							<HiArrowDownTray
+							<HiArrowTopRightOnSquare
 								size={16}
 								strokeWidth={1}
 								color='var(--primary)'
@@ -73,7 +84,7 @@ const HomePage: NextPage = () => {
 						</a>
 					</Link>
 				</Section>
-				<Section title='Feautured projects'>
+				<Section title='Projects'>
 					<List
 						items={projects
 							.filter((project) => project.feautured)

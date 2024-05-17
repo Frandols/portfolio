@@ -78,6 +78,9 @@
 			}
 
 			.body {
+				display: grid;
+				grid-template-rows: 1.5rem 1.5rem;
+
 				&:hover {
 					.title,
 					.description {
@@ -102,6 +105,7 @@
 			.rating {
 				display: flex;
 				align-items: center;
+				justify-content: center;
 				gap: 0.25rem;
 
 				.count {

@@ -2,7 +2,7 @@ import { FC, PropsWithChildren } from 'react'
 import styles from './section.component.module.scss'
 
 interface SectionProps {
-	title: string
+	title?: string
 }
 
 const Section: FC<
@@ -10,7 +10,7 @@ const Section: FC<
 > = ({ title, children, className = '' }) => {
 	return (
 		<section className={`${styles.section} ${className}`}>
-			<h1 className={styles.title}>{title}</h1>
+			{title === undefined ? null : <h2 className={styles.title}>{title}</h2>}
 			{children}
 		</section>
 	)
