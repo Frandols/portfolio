@@ -151,12 +151,12 @@ const Position: FC<Experience['positions'][number]> = ({
 				target='_blank'
 				rel='noreferrer'
 			>
-				<h1
+				<h3
 					className={styles.title}
 					title={title}
 				>
 					{title}
-				</h1>
+				</h3>
 				<p className={styles.description}>
 					{started} - {ended}
 				</p>
