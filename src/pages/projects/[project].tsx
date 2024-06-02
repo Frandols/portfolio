@@ -32,7 +32,7 @@ const ProjectPage: NextPage = () => {
 				/>
 				<meta
 					property='og:url'
-					content='https://franciscodelossantos.com/projects'
+					content={`https://franciscodelossantos.com/projects/${project.id}`}
 				/>
 			</Head>
 			<Gallery images={project.images} />
