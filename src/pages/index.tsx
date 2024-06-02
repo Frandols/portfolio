@@ -18,11 +18,27 @@ const HomePage: NextPage = () => {
 	return (
 		<section className={styles.homePage}>
 			<Head>
-				<title>Home - Francisco De Los Santos | Web Developer</title>
+				<title>Francisco De Los Santos | Web Developer</title>
 				<meta
 					name='description'
 					content='1 year of experience as Web Developer.'
 					key='desc'
+				/>
+				<meta
+					property='og:title'
+					content='Francisco De Los Santos | Web Developer'
+				/>
+				<meta
+					property='og:description'
+					content='1 year of experience as Web Developer.'
+				/>
+				<meta
+					property='og:image'
+					content='https://franciscodelossantos.com/assets/avatar.avif'
+				/>
+				<meta
+					property='og:url'
+					content='https://franciscodelossantos.com'
 				/>
 			</Head>
 			<main className={styles.main}>

@@ -14,6 +14,22 @@ const ProjectsPage: NextPage = () => {
 					content='Projects that I worked on.'
 					key='desc'
 				/>
+				<meta
+					property='og:title'
+					content='Projects - Francisco De Los Santos | Web Developer'
+				/>
+				<meta
+					property='og:description'
+					content='Projects that I worked on.'
+				/>
+				<meta
+					property='og:image'
+					content='https://franciscodelossantos.com/assets/avatar.avif'
+				/>
+				<meta
+					property='og:url'
+					content='https://franciscodelossantos.com/projects'
+				/>
 			</Head>
 			<h1>Projects</h1>
 			<Section>

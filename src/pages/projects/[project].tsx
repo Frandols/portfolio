@@ -18,6 +18,22 @@ const ProjectPage: NextPage = () => {
 					content={project.description}
 					key='desc'
 				/>
+				<meta
+					property='og:title'
+					content={`${project.title} - Francisco De Los Santos | Web Developer`}
+				/>
+				<meta
+					property='og:description'
+					content={project.description}
+				/>
+				<meta
+					property='og:image'
+					content={`https://franciscodelossantos.com${project.images[0].src}`}
+				/>
+				<meta
+					property='og:url'
+					content='https://franciscodelossantos.com/projects'
+				/>
 			</Head>
 			<Gallery images={project.images} />
 			<div className={styles.info}>

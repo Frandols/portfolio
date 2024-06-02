@@ -11,6 +11,22 @@ const ExperiencePage = () => {
 					content='How I started working as a web developer and the progress I made.'
 					key='desc'
 				/>
+				<meta
+					property='og:title'
+					content='Experience - Francisco De Los Santos | Web Developer'
+				/>
+				<meta
+					property='og:description'
+					content='How I started working as a web developer and the progress I made.'
+				/>
+				<meta
+					property='og:image'
+					content='https://franciscodelossantos.com/assets/avatar.avif'
+				/>
+				<meta
+					property='og:url'
+					content='https://franciscodelossantos.com/experience'
+				/>
 			</Head>
 			<h1>Experience</h1>
 			<div className={styles.item}>
