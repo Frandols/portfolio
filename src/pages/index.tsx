@@ -58,20 +58,36 @@ const HomePage: NextPage = () => {
 							<b className={styles.bold}>Web Developer.</b>
 						</h2>
 					</div>
-					<button className={styles.downloadCV}>
-						<a
-							className={styles.link}
-							href='/assets/CV_FranciscoDeLosSantos.pdf'
-							target='_blank'
-						>
-							CV
-							<HiArrowTopRightOnSquare
-								size={16}
-								strokeWidth={1}
-								color='var(--primary)'
-							/>
-						</a>
-					</button>
+					<div className={styles.resumes}>
+						<button className={styles.downloadCV}>
+							<a
+								className={styles.link}
+								href='/assets/CV_FranciscoDeLosSantos.pdf'
+								target='_blank'
+							>
+								Resume (en)
+								<HiArrowTopRightOnSquare
+									size={16}
+									strokeWidth={1}
+									color='var(--primary)'
+								/>
+							</a>
+						</button>
+						<button className={styles.downloadCV}>
+							<a
+								className={styles.link}
+								href='/assets/CV_FranciscoDeLosSantos-es.pdf'
+								target='_blank'
+							>
+								CV (es)
+								<HiArrowTopRightOnSquare
+									size={16}
+									strokeWidth={1}
+									color='var(--primary)'
+								/>
+							</a>
+						</button>
+					</div>
 				</section>
 				<Section title='Experience'>
 					<List
